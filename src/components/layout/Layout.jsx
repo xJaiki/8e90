@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, ExternalLink, Menu, X, MenuIcon, Utensils, PersonStanding, ChefHat, Images, Smartphone } from 'lucide-react';
 import logo from '../../assets/logo.svg';
-import { AnimatedLogoWithText } from '../ui/AnimatedLogo';
 
 const Layout = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -53,7 +52,7 @@ const Layout = ({ children }) => {
               className="flex items-center font-bold text-xl text-rose-600"
               style={{ marginLeft: '-0.8rem' }}
             >
-              <AnimatedLogoWithText width="2" height="2" />
+              8e90
             </Link>
             {/* Mobile menu button */}
             <button
@@ -134,22 +133,7 @@ const Layout = ({ children }) => {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-4 ">
-        <div className="container mx-auto px-0">
-          <div className="flex flex-col md:flex-row justify-center items-center">
-            <div className="mb-2 md:mb-0">
-              <div className="font-bold text-xl flex items-center justify-center text-rose-600">
-                <AnimatedLogoWithText
-                  width="2"
-                  height="2"
-                  className="text-rose-600"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-4 pt-6 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} JaikiTemplate. Open source with 💖</p>
-          </div>
-        </div>
+        
       </footer>
     </div>
   );
