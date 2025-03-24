@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, Star, Users, Clock, ShieldCheck } from 'lucide-react';
-import logo from 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832708/8e90/acj358zdnrgzminl6viz.png';
+const logo = 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832708/8e90/acj358zdnrgzminl6viz.png';
 
 const ChiSiamo = () => {
   // SEO optimization - set page title and meta description

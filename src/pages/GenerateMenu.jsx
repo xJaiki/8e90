@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { toast } from 'react-hot-toast';
 import { Save, Image, Lock, Eye, EyeOff, Copy } from 'lucide-react';
 import html2canvas from 'html2canvas';
-import logo from 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832708/8e90/acj358zdnrgzminl6viz.png';
+const logo ='https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832708/8e90/acj358zdnrgzminl6viz.png';
 
 // Password hardcodata per accedere alla pagina
 const ADMIN_PASSWORD = "8e90menu2025";
