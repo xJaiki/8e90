@@ -36,11 +36,11 @@ const Layout = ({ children }) => {
       icon: <Users size={18} />,
       path: '/chi-siamo',
     },
-    {
-      label: 'Galleria',
-      icon: <Image size={18} />,
-      path: '/galleria',
-    },
+    // {
+    //   label: 'Galleria',
+    //   icon: <Image size={18} />,
+    //   path: '/galleria',
+    // },
     {
       label: 'Contatti',
       icon: <Phone size={18} />,
@@ -52,12 +52,12 @@ const Layout = ({ children }) => {
   const deliveryServices = [
     {
       label: 'Just Eat',
-      path: '#',
+      path: 'https://www.justeat.it/restaurants-8and90-paninoteca-marano-di-napoli/menu?utm_source=google&utm_medium=organic&utm_campaign=orderaction',
       external: true,
     },
     {
       label: 'Glovo',
-      path: '#',
+      path: 'https://glovoapp.com/it/it/napoli/890-nap/?utm_source=google&utm_medium=organic&utm_campaign=google_reserve_place_order_action',
       external: true,
     },
   ];
@@ -169,7 +169,7 @@ const Layout = ({ children }) => {
       <main className="flex-grow pt-16">{children}</main>
 
       {/* Footer */}
-      <footer className="bg-secondary text-bg py-12">
+      <footer className="bg-secondary text-bg py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Info */}
@@ -179,9 +179,9 @@ const Layout = ({ children }) => {
                 <span className="text-bg font-caveat"> & </span>
                 90
               </h3>
-              <p className="mb-2">Via Napoli, 123</p>
-              <p className="mb-2">80100 Napoli (NA)</p>
-              <p className="mb-2">Tel: +39 123 456 7890</p>
+              <p className="mb-2">Corso Europa 88</p>
+              <p className="mb-2">80016 Marano di Napoli (NA)</p>
+              <p className="mb-2">Tel: +39 081 1802 0573 </p>
             </div>
             
             {/* Quick Links */}
@@ -204,12 +204,12 @@ const Layout = ({ children }) => {
             {/* Hours */}
             <div>
               <h3 className="text-xl font-bold mb-4">Orari di Apertura</h3>
-              <p className="mb-2">Lunedì - Venerdì: 11:00 - 22:00</p>
-              <p className="mb-2">Sabato: 11:00 - 23:00</p>
-              <p className="mb-6">Domenica: 11:00 - 22:00</p>
+              <p className="mb-2">Martedi - Venerdi: 09:30 - 15:00 | 18:30 - 22:30</p>
+              <p className="mb-2">Sabato: 09:30 - 15:30 | 18:30 - 00:00</p>
+              <p className="mb-6">Domenica: 09:30 - 15:30</p>
               
+              {/*
               <div className="flex space-x-4">
-                {/* Social Media Icons */}
                 <a href="#" className="hover:text-accent-dark text-bg" aria-label="Facebook">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
@@ -230,6 +230,7 @@ const Layout = ({ children }) => {
                   </svg>
                 </a>
               </div>
+              */}
             </div>
           </div>
           

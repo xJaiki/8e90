@@ -5,6 +5,9 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import ErrorBoundary from './pages/ErrorBoundary';
 import ToastProvider from './components/ui/ToastProvider';
+import Menu from './pages/Menu';
+import ChiSiamo from './pages/ChiSiamo';
+import Contatti from './pages/Contatti';
 
 // Main App component with routing configuration
 function App() {
@@ -28,14 +31,7 @@ function App() {
             path="/menu"
             element={
               <Layout>
-                <div className="container mx-auto px-4 py-16">
-                  <h1 className="text-3xl font-bold text-[#351c11] mb-4">
-                    Il nostro Menu
-                  </h1>
-                  <p className="text-lg text-gray-700">
-                    Questa pagina sarà implementata nel prossimo step.
-                  </p>
-                </div>
+                <Menu />
               </Layout>
             }
           />
@@ -44,14 +40,7 @@ function App() {
             path="/chi-siamo"
             element={
               <Layout>
-                <div className="container mx-auto px-4 py-16">
-                  <h1 className="text-3xl font-bold text-[#351c11] mb-4">
-                    Chi Siamo
-                  </h1>
-                  <p className="text-lg text-gray-700">
-                    Questa pagina sarà implementata nel prossimo step.
-                  </p>
-                </div>
+                <ChiSiamo />
               </Layout>
             }
           />
@@ -76,14 +65,7 @@ function App() {
             path="/contatti"
             element={
               <Layout>
-                <div className="container mx-auto px-4 py-16">
-                  <h1 className="text-3xl font-bold text-[#351c11] mb-4">
-                    Contatti
-                  </h1>
-                  <p className="text-lg text-gray-700">
-                    Questa pagina sarà implementata nel prossimo step.
-                  </p>
-                </div>
+                <Contatti />
               </Layout>
             }
           />

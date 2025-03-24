@@ -1,13 +1,141 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JaikiTemplate - React</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>8&90 - Rosticceria e Tavola Calda Napoletana a Marano</title>
+    <meta name="title" content="8&90 - Rosticceria e Tavola Calda Napoletana a Marano" />
+    <meta name="description" content="Scopri l'autentica cucina napoletana da 8&90 a Marano. Rosticceria, tavola calda, primi e secondi piatti preparati con ingredienti freschi. Ordina da asporto o a domicilio." />
+    <meta name="keywords" content="rosticceria Marano, tavola calda napoletana, cucina napoletana, 8&90, panini, catering Marano, cibo da asporto Marano, menu napoletano" />
+    <meta name="author" content="8&90" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.8e90.jaiki.xyz/" />
+    <meta property="og:title" content="8&90 - Rosticceria e Tavola Calda Napoletana a Marano" />
+    <meta property="og:description" content="Scopri l'autentica cucina napoletana da 8&90 a Marano. Rosticceria, tavola calda, primi e secondi piatti preparati con ingredienti freschi. Ordina da asporto o a domicilio." />
+    <meta property="og:image" content="https://www.8e90.jaiki.xyz/assets/logoo.png" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content="8&90 Rosticceria" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.8e90.jaiki.xyz/" />
+    <meta property="twitter:title" content="8&90 - Rosticceria e Tavola Calda Napoletana a Marano" />
+    <meta property="twitter:description" content="Scopri l'autentica cucina napoletana da 8&90 a Marano. Rosticceria, tavola calda, primi e secondi piatti preparati con ingredienti freschi. Ordina da asporto o a domicilio." />
+    <meta property="twitter:image" content="https://www.8e90.jaiki.xyz/assets/logoo.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/ico.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/ico.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/ico.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#804e1b" />
+    <meta name="msapplication-TileColor" content="#804e1b" />
+    <meta name="theme-color" content="#fff5dc" />
+
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://www.8e90.jaiki.xyz" />
+
+    <!-- Preconnect to resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Structured data (JSON-LD) for Restaurant -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "8&90 Rosticceria e Tavola Calda",
+        "image": "https://www.8e90.jaiki.xyz/assets/logoo.png",
+        "@id": "https://www.8e90.jaiki.xyz/",
+        "url": "https://www.8e90.jaiki.xyz/",
+        "telephone": "+3908118020573",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Corso Europa, 168",
+          "addressLocality": "Marano di Napoli",
+          "postalCode": "80016",
+          "addressRegion": "NA",
+          "addressCountry": "IT"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.8451613,
+          "longitude": 14.1612712
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:30",
+            "closes": "15:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "18:30",
+            "closes": "22:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:30",
+            "closes": "15:30"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "18:30",
+            "closes": "00:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "09:30",
+            "closes": "15:30"
+          }
+        ],
+        "servesCuisine": ["Italian", "Neapolitan"],
+        "priceRange": "€€",
+        "menu": "https://www.8e90.jaiki.xyz/menu",
+        "acceptsReservations": "Yes",
+        "hasMap": "https://maps.app.goo.gl/s9UgCJcKAHjSXGk26"
+      }
+    </script>
+
+    <!-- Font preloading -->
+    <link rel="preload" href="/fonts/caveat.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Custom styles -->
+    <style>
+      /* Critical CSS if needed */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff5dc;
+        color: #804e1b;
+        font-family: 'Arial', sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Fallback content for search engines and non-JS users -->
+      <div class="loading">
+        <noscript>
+          <h1>8&90 - Rosticceria e Tavola Calda Napoletana</h1>
+          <p>Attiva JavaScript per visualizzare questo sito. Siamo una rosticceria e tavola calda a Marano di Napoli.</p>
+          <p>Contattaci al +39 334 925 9323 o visitaci in Corso Europa, 168, Marano di Napoli (NA)</p>
+        </noscript>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

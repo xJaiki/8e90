@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Clock, MapPin, Phone } from 'lucide-react';
+import { ArrowRight, Clock, MapPin, Phone, Utensils, TruckIcon, Calendar, Instagram } from 'lucide-react';
 import hero from '../assets/hero.webp';
+import logo from '../assets/logo.png';
+import pizzafritta from '../assets/img/pizzafritta.jpg';
+import parigina from '../assets/img/parigina.jpg';
+import paninonapoletano from '../assets/img/paninonapoletano.jpg';
+import espotony from '../assets/img/espotony.jpg';
+import vetrina from '../assets/img/vetrina.jpg';
 
 // Homepage component for 8&90 rosticceria
 const Home = () => {
@@ -12,7 +18,7 @@ const Home = () => {
     if (metaDescription) {
       metaDescription.setAttribute(
         'content',
-        'Scopri i sapori autentici della cucina napoletana da 8&90, rosticceria e tavola calda artigianale con tradizioni che risalgono a generazioni.'
+        'Scopri i sapori autentici della cucina napoletana da 8&90, rosticceria e tavola calda artigianale con tradizioni che risalgono a generazioni. Servizi di catering e rifornimento per locali.'
       );
     }
   }, []);
@@ -27,6 +33,7 @@ const Home = () => {
         ></div>
         
         <div className="relative h-full flex flex-col items-center justify-center text-white text-center px-4 z-10">
+          <img src={logo} alt="8&90 Rosticceria" className="w-32 md:w-40 mb-4" />
           <h1 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
             Autentica Cucina <br/> <span className="font-caveat">Napoletana</span>
           </h1>
@@ -68,8 +75,187 @@ const Home = () => {
             <Phone size={24} className="text-highlight" />
             <div>
               <p className="font-semibold">Contattaci</p>
-              <p className="text-sm opacity-80">+39 334 925 9323</p>
+              <p className="text-sm opacity-80">+39 081 1802 0573</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      {/* Catering and Wholesale Section */}
+      <section className="py-16 px-4 bg-bg">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-secondary">
+              I Nostri <span className="text-primary font-caveat">Servizi</span>
+            </h2>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto mt-3">
+              Oltre alla nostra rosticceria, offriamo servizi professionali per aziende ed eventi
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 bg-secondary flex items-center justify-center">
+                <TruckIcon size={80} className="text-highlight" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-primary mb-3">Rifornimento per Locali</h3>
+                <p className="text-gray-700 mb-4">
+                  Forniamo prodotti di alta qualità per bar, ristoranti e locali commerciali. La nostra produzione all'ingrosso mantiene gli stessi standard qualitativi che ci contraddistinguono.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-accent-light mr-2">•</span>
+                    <span>Prodotti di rosticceria pronti per la vendita</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent-light mr-2">•</span>
+                    <span>Consegne programmate e puntuali</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent-light mr-2">•</span>
+                    <span>Ordini personalizzati in base alle esigenze</span>
+                  </li>
+                </ul>
+                <a 
+                  href="tel:+3908118020573 " 
+                  className="text-primary font-semibold hover:text-accent-dark transition-colors flex items-center"
+                >
+                  Contattaci per un preventivo
+                  <ArrowRight size={16} className="ml-2" />
+                </a>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-48 bg-secondary flex items-center justify-center">
+                <Utensils size={80} className="text-highlight" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-primary mb-3">Servizio Catering</h3>
+                <p className="text-gray-700 mb-4">
+                  Rendiamo speciale ogni evento con il nostro servizio di catering. Dalla piccola festa in famiglia al grande evento aziendale, portiamo l'autentico sapore napoletano ovunque.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-start">
+                    <span className="text-accent-light mr-2">•</span>
+                    <span>Feste private e celebrazioni</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent-light mr-2">•</span>
+                    <span>Eventi aziendali e meeting</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-accent-light mr-2">•</span>
+                    <span>Cerimonie e ricevimenti</span>
+                  </li>
+                </ul>
+                <Link 
+                  to="/contatti" 
+                  className="text-primary font-semibold hover:text-accent-dark transition-colors flex items-center"
+                >
+                  Richiedi informazioni
+                  <ArrowRight size={16} className="ml-2" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Daily Tavola Calda Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="container mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4 text-center">
+            Menu del <span className="text-accent-light font-caveat">Giorno</span>
+          </h2>
+          <div className="text-center flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+            <div className="">
+              <p className="text-secondary mb-4 text-lg">
+                Ogni giorno proponiamo un menu completo per il pranzo con piatti freschi della tradizione napoletana.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+                <div className="bg-bg rounded-lg p-4 shadow-sm">
+                  <div className="flex items-center mb-2">
+                    <div className="bg-accent-light w-7 h-7 rounded-full flex items-center justify-center text-white mr-2">
+                      <span className="font-bold">1</span>
+                    </div>
+                    <h3 className="font-bold text-primary">Primi Piatti</h3>
+                  </div>
+                  <p className="text-gray-700 text-sm">
+                    Pasta fresca, risotti e zuppe della tradizione campana.
+                  </p>
+                </div>
+                
+                <div className="bg-bg rounded-lg p-4 shadow-sm">
+                  <div className="flex items-center mb-2">
+                    <div className="bg-accent-light w-7 h-7 rounded-full flex items-center justify-center text-white mr-2">
+                      <span className="font-bold">2</span>
+                    </div>
+                    <h3 className="font-bold text-primary">Secondi Piatti</h3>
+                  </div>
+                  <p className="text-gray-700 text-sm">
+                    Carne, pesce e opzioni vegetariane preparate con cura.
+                  </p>
+                </div>
+                
+                <div className="bg-bg rounded-lg p-4 shadow-sm">
+                  <div className="flex items-center mb-2">
+                    <div className="bg-accent-light w-7 h-7 rounded-full flex items-center justify-center text-white mr-2">
+                      <span className="font-bold">3</span>
+                    </div>
+                    <h3 className="font-bold text-primary">Contorni</h3>
+                  </div>
+                  <p className="text-gray-700 text-sm">
+                    Verdure di stagione secondo ricette tradizionali.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start mb-6">
+                <Calendar size={20} className="text-accent-light mr-3 mt-1 flex-shrink-0" />
+                <p className="text-gray-700">
+                  <span className="font-semibold">Il menu varia ogni giorno</span> in base agli ingredienti freschi di stagione.
+                </p>
+              </div>
+              
+              <div className="flex items-start mb-6">
+                <Instagram size={20} className="text-accent-light mr-3 mt-1 flex-shrink-0" />
+                <p className="text-gray-700">
+                  <span className="font-semibold">Seguici su Instagram</span> per scoprire i piatti del giorno:
+                  <a 
+                    href="https://www.instagram.com/tavolacalda_paninoteca_8e90/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="ml-1 text-accent-dark hover:underline"
+                  >
+                    @tavolacalda_paninoteca_8e90
+                  </a>
+                </p>
+              </div>
+              
+              <Link 
+                to="/menu" 
+                className="px-6 py-2 bg-primary hover:bg-accent-dark text-white font-semibold rounded-md transition duration-300 inline-flex items-center space-x-2"
+              >
+                <span>Scopri di Più</span>
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+            
+            {/* <div className="md:w-1/2 relative">
+              <img 
+                src="/dishes/daily-menu.jpg" 
+                alt="Menu del giorno" 
+                className="rounded-lg shadow-xl w-full h-auto"
+              />
+              <div className="absolute top-4 right-4 bg-accent-light text-white px-3 py-1 rounded-md font-bold text-sm">
+                Speciale Pranzo
+              </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -87,7 +273,7 @@ const Home = () => {
                 key={index} 
                 className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="h-64 overflow-hidden">
+                <div className="h-100 overflow-hidden">
                   <img 
                     src={item.image} 
                     alt={item.name} 
@@ -119,13 +305,13 @@ const Home = () => {
       </section>
 
       {/* Testimonial Section */}
-      <section className="py-16 bg-secondary text-bg">
+      <section className="py-16 bg-white text-secondary">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             Cosa Dicono i <span className="text-highlight font-caveat">Nostri Clienti</span>
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-secondary">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-secondary">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
@@ -154,10 +340,10 @@ const Home = () => {
       {/* About Brief */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="md:w-1/2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="md:w-1/6">
               <img 
-                src="/about-image.jpg" 
+                src={vetrina}
                 alt="La nostra storia" 
                 className="rounded-lg shadow-xl w-full h-auto"
               />
@@ -170,7 +356,7 @@ const Home = () => {
                 Da oltre tre generazioni, portiamo avanti la tradizione culinaria napoletana con passione e dedizione. Ogni piatto che esce dalla nostra cucina racconta una storia di famiglia, ingredienti selezionati e amore per la nostra terra.
               </p>
               <p className="text-secondary mb-6">
-                La rosticceria 8&90 è nata nel cuore di Napoli con l'obiettivo di offrire i sapori autentici della cucina partenopea, mantenendo vive le ricette tradizionali e l'arte della preparazione artigianale.
+                Il nostro obiettivo è offrire ai nostri clienti un'esperienza culinaria autentica e genuina, con piatti preparati con cura e rispetto per la tradizione.
               </p>
               <Link 
                 to="/chi-siamo" 
@@ -201,10 +387,10 @@ const Home = () => {
               Contattaci
             </Link>
             <a 
-              href="#" 
+              href="tel:+3908118020573 " 
               className="px-8 py-3 bg-white text-secondary hover:bg-gray-100 font-semibold rounded-md transition duration-300"
             >
-              Ordina Online
+              Ordina Telefonicamente
             </a>
           </div>
         </div>
@@ -216,42 +402,43 @@ const Home = () => {
 // Sample data for the specialties section
 const specialties = [
   {
-    name: 'Arancini di Riso',
-    description: 'Croccanti all\'esterno e morbidi all\'interno, ripieni di ragù, piselli e mozzarella filante.',
-    price: '€3.50',
+    name: 'Parigina',
+    description: 'Pizza rustica farcita con prosciutto cotto, formaggio e prosciutto.',
     tag: 'Più venduto',
-    image: '/dishes/arancini.jpg'
+    image: parigina,
   },
   {
     name: 'Pizza Fritta',
     description: 'La tradizionale pizza fritta napoletana con ricotta, pomodoro, provola e pepe.',
-    price: '€5.00',
-    tag: 'Specialità della casa',
-    image: '/dishes/pizza-fritta.jpg'
+    tag: 'Ricetta originale',
+    image: pizzafritta,
   },
   {
-    name: 'Parmigiana di Melanzane',
-    description: 'Strati di melanzane fritte, pomodoro, basilico e mozzarella al forno.',
-    price: '€4.50',
-    tag: 'Vegetariano',
-    image: '/dishes/parmigiana.jpg'
+    name: 'Panino Napoletano',
+    description: 'Classico saccottino di pasta lievitata farcito con salumi e formaggi.',
+    tag: 'Specialità della casa',
+    image: paninonapoletano,
   }
 ];
 
 // Sample data for testimonials
 const testimonials = [
   {
-    text: 'La migliore rosticceria di Napoli! Gli arancini sono incredibili e il personale è sempre gentile e disponibile.',
-    name: 'Marco R.'
+    text: 'Qualità prezzo imbattibile. Il mio posto preferito per un pranzo veloce e genuino, personale cordiale e simpatico.',
+    name: 'Mario D.'
   },
   {
-    text: 'Vengo qui da anni e la qualità non è mai scesa. Sapori autentici che ti fanno sentire a casa.',
-    name: 'Francesca T.'
+    text: 'Ho organizzato un catering per il mio compleanno e tutti gli ospiti sono rimasti soddisfatti. Cibo ottimo e servizio impeccabile.',
+    name: 'Sara G.'
   },
   {
-    text: 'Ho ordinato per una cena in famiglia e tutti sono rimasti entusiasti. Cibo eccellente e servizio impeccabile.',
-    name: 'Giuseppe M.'
-  }
+    text: 'Ho ordinato per pasqua una pastiera e un casatiello. Sono rimasta molto soddisfatto, il casatiello era spettacolare',
+    name: 'Giuseppe D.'
+  },
+  {
+    text: 'Tempi di consegna rapidi e cibo caldo e saporito. Il migliore sulla zona.',
+    name: 'Salvatore F.'
+  },
 ];
 
 export default Home;
