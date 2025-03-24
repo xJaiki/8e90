@@ -6,12 +6,14 @@ import NotFound from './pages/NotFound';
 import ErrorBoundary from './pages/ErrorBoundary';
 import ToastProvider from './components/ui/ToastProvider';
 
+// Main App component with routing configuration
 function App() {
   return (
     <Router>
       <ToastProvider />
       <ErrorBoundary>
         <Routes>
+          {/* Home Route */}
           <Route
             path="/"
             element={
@@ -20,6 +22,73 @@ function App() {
               </Layout>
             }
           />
+          
+          {/* Placeholder routes for future pages */}
+          <Route
+            path="/menu"
+            element={
+              <Layout>
+                <div className="container mx-auto px-4 py-16">
+                  <h1 className="text-3xl font-bold text-[#351c11] mb-4">
+                    Il nostro Menu
+                  </h1>
+                  <p className="text-lg text-gray-700">
+                    Questa pagina sarà implementata nel prossimo step.
+                  </p>
+                </div>
+              </Layout>
+            }
+          />
+          
+          <Route
+            path="/chi-siamo"
+            element={
+              <Layout>
+                <div className="container mx-auto px-4 py-16">
+                  <h1 className="text-3xl font-bold text-[#351c11] mb-4">
+                    Chi Siamo
+                  </h1>
+                  <p className="text-lg text-gray-700">
+                    Questa pagina sarà implementata nel prossimo step.
+                  </p>
+                </div>
+              </Layout>
+            }
+          />
+          
+          <Route
+            path="/galleria"
+            element={
+              <Layout>
+                <div className="container mx-auto px-4 py-16">
+                  <h1 className="text-3xl font-bold text-[#351c11] mb-4">
+                    Galleria
+                  </h1>
+                  <p className="text-lg text-gray-700">
+                    Questa pagina sarà implementata nel prossimo step.
+                  </p>
+                </div>
+              </Layout>
+            }
+          />
+          
+          <Route
+            path="/contatti"
+            element={
+              <Layout>
+                <div className="container mx-auto px-4 py-16">
+                  <h1 className="text-3xl font-bold text-[#351c11] mb-4">
+                    Contatti
+                  </h1>
+                  <p className="text-lg text-gray-700">
+                    Questa pagina sarà implementata nel prossimo step.
+                  </p>
+                </div>
+              </Layout>
+            }
+          />
+          
+          {/* 404 Not Found Route */}
           <Route
             path="*"
             element={

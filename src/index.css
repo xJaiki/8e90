@@ -5,6 +5,8 @@ html, body {
   overscroll-behavior: none;
   overflow: auto;
   height: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
 }
 
 /* Se serve anche per i contenitori scrollabili interni */
@@ -12,8 +14,18 @@ html, body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; /* Per un migliore scrolling su dispositivi mobili */
   height: 100%;
+  background-color: var(--color-bg);
 }
 
-@theme { 
+@theme {
   --font-caveat: 'Caveat', cursive;
+
+  --color-bg: #fff5dc; /* Beige caldo e accogliente */
+  --color-primary: #804e1b; /* Marrone rustico, richiama il legno e la tradizione */
+  --color-secondary: #351c11; /* Marrone scuro intenso per profondità ed eleganza */
+  --color-accent-light: #d9a679; /* Caramello dorato per dettagli e pulsanti delicati */
+  --color-accent-dark: #5c3312; /* Cioccolato fondente per contrasti e testi importanti */
+  --color-highlight: #ffb347; /* Arancione caldo per inviti all’azione e enfasi */
+  --color-text-primary: #3a1d0f; /* Marrone profondo per testi su sfondo chiaro */
+  --color-text-secondary: #b68167; /* Marrone chiaro per testi su sfondo scuro */
 }
