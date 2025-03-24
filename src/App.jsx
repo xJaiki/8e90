@@ -8,6 +8,7 @@ import ToastProvider from './components/ui/ToastProvider';
 import Menu from './pages/Menu';
 import ChiSiamo from './pages/ChiSiamo';
 import Contatti from './pages/Contatti';
+import MenuGenerator from './pages/GenerateMenu';
 
 // Main App component with routing configuration
 function App() {
@@ -67,6 +68,13 @@ function App() {
               <Layout>
                 <Contatti />
               </Layout>
+            }
+          />
+
+          <Route
+            path="/admin"
+            element={
+              <MenuGenerator />
             }
           />
           
