@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Clock, MapPin, Phone, Utensils, TruckIcon, Calendar, Instagram } from 'lucide-react';
-import hero from '../assets/hero.webp';
-import logo from '../assets/logo.png';
-import pizzafritta from '../assets/img/pizzafritta.jpg';
-import parigina from '../assets/img/parigina.jpg';
-import paninonapoletano from '../assets/img/paninonapoletano.jpg';
+import hero from 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832708/8e90/bqrsj8guuj9t5xndkort.webp';
+import logo from 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832708/8e90/e5fxfcdslfujfrhfwk0n.png';
+import pizzafritta from 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832711/8e90/cw2ydpgjv71gxshqgljv.jpg';
+import parigina from 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832710/8e90/mrnignytxvms1fo02d7z.jpg';
+import paninonapoletano from 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832710/8e90/jgy7owxcw3ukeydgguiz.jpg';
 import espotony from '../assets/img/espotony.jpg';
-import vetrina from '../assets/img/vetrina.jpg';
+import vetrina from 'https://res.cloudinary.com/dnjclqtlc/image/upload/v1742832711/8e90/akabbtxkpwwdkgzvrwo3.jpg';
 
 // Homepage component for 8&90 rosticceria
 const Home = () => {
