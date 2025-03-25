@@ -112,6 +112,137 @@ const Menu = () => {
                 </div>
             </section>
 
+
+            <section className="py-10 px-4 bg-bg">
+                <div className="container mx-auto">
+                    <div className="bg-white bg-opacity-10 rounded-lg p-6 md:p-8 border-2 border-accent-light shadow-lg relative overflow-hidden">
+                        <div className="absolute top-0 right-0 bg-accent-light text-white px-4 py-2 rounded-bl-lg font-bold">
+                            Speciale Pranzo
+                        </div>
+
+                        <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
+                            <div className="bg-accent-light rounded-full p-3 mb-4 md:mb-0 md:mr-6 text-white">
+                                <Utensils size={32} />
+                            </div>
+                            <div>
+                                <h2 className="text-2xl md:text-3xl font-bold text-secondary">
+                                    Tavola Calda - Menu del Giorno
+                                </h2>
+                                <p className="text-lg text-gray-700 mt-1">
+                                    Primi, secondi e contorni preparati ogni giorno con ingredienti freschi
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                            <div className="bg-white rounded-lg p-4 shadow-md">
+                                <div className="flex items-center mb-3">
+                                    <div className="bg-accent-light w-8 h-8 rounded-full flex items-center justify-center text-white mr-3">
+                                        <span className="font-bold">1</span>
+                                    </div>
+                                    <h3 className="text-xl font-bold text-primary">Primi Piatti</h3>
+                                </div>
+                                <p className="text-gray-700">
+                                    Pasta fresca, risotti e zuppe della tradizione napoletana, preparati con cura e ingredienti locali.
+                                </p>
+                            </div>
+
+                            <div className="bg-white rounded-lg p-4 shadow-md">
+                                <div className="flex items-center mb-3">
+                                    <div className="bg-accent-light w-8 h-8 rounded-full flex items-center justify-center text-white mr-3">
+                                        <span className="font-bold">2</span>
+                                    </div>
+                                    <h3 className="text-xl font-bold text-primary">Secondi Piatti</h3>
+                                </div>
+                                <p className="text-gray-700">
+                                    Selezione di carne, pesce e piatti vegetariani, cucinati secondo le ricette della tradizione napoletana.
+                                </p>
+                            </div>
+
+                            <div className="bg-white rounded-lg p-4 shadow-md">
+                                <div className="flex items-center mb-3">
+                                    <div className="bg-accent-light w-8 h-8 rounded-full flex items-center justify-center text-white mr-3">
+                                        <span className="font-bold">3</span>
+                                    </div>
+                                    <h3 className="text-xl font-bold text-primary">Contorni</h3>
+                                </div>
+                                <p className="text-gray-700">
+                                    Verdure di stagione preparate secondo ricette tradizionali, perfette per accompagnare i nostri piatti.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="bg-white rounded-lg p-5 shadow-md border-l-4 border-accent-light">
+                            <div className="flex items-start">
+                                <Calendar size={22} className="text-accent-light mt-1 mr-3 flex-shrink-0" />
+                                <p className="text-gray-700">
+                                    <span className="font-bold text-secondary">Il nostro menu varia ogni giorno</span> in base alla disponibilità di ingredienti freschi e stagionali. Proponiamo sempre opzioni diverse per accontentare tutti i gusti.
+                                </p>
+                            </div>
+
+                            <div className="flex items-start mt-4">
+                                <Instagram size={22} className="text-accent-light mt-1 mr-3 flex-shrink-0" />
+                                <p className="text-gray-700">
+                                    <span className="font-bold text-secondary">Seguici su Instagram</span> per scoprire in anteprima il menu del giorno e tutte le nostre specialità:
+                                    <a
+                                        href="https://www.instagram.com/tavolacalda_paninoteca_8e90/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="ml-2 text-accent-dark hover:underline font-medium"
+                                    >
+                                        @tavolacalda_paninoteca_8e90
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Custom Offerings */}
+            <section className="py-10 px-4">
+                <div className="container mx-auto">
+                    <div className="bg-white rounded-lg p-6 md:p-8 border-l-4 border-primary shadow-md">
+                        <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-4 flex items-center">
+                            <UtensilsCrossed size={24} className="mr-3 text-primary" />
+                            Piatti Personalizzati
+                        </h2>
+                        <p className="text-gray-700 text-lg mb-3">
+                            Non trovi quello che cerchi nel menu? Da 8&90 realizziamo anche preparazioni su richiesta!
+                        </p>
+                        <div className="space-y-3 mt-4">
+                            <div className="flex items-start">
+                                <div className="bg-primary rounded-full p-1 mt-1 mr-3">
+                                    <Clock size={16} className="text-white" />
+                                </div>
+                                <p className="text-gray-700">Piatti della tradizione napoletana disponibili con preavviso</p>
+                            </div>
+                            <div className="flex items-start">
+                                <div className="bg-primary rounded-full p-1 mt-1 mr-3">
+                                    <Clock size={16} className="text-white" />
+                                </div>
+                                <p className="text-gray-700">Preparazioni per eventi speciali, feste e cerimonie</p>
+                            </div>
+                            <div className="flex items-start">
+                                <div className="bg-primary rounded-full p-1 mt-1 mr-3">
+                                    <Clock size={16} className="text-white" />
+                                </div>
+                                <p className="text-gray-700">Adattamento di ricette per esigenze alimentari specifiche</p>
+                            </div>
+                        </div>
+                        <div className="mt-6">
+                            <a
+                                href="tel:+3908118020573 "
+                                className="inline-flex items-center text-primary font-medium hover:text-accent-dark transition-colors"
+                            >
+                                Chiama per informazioni
+                                <ArrowRight size={16} className="ml-2" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Loading State */}
             {isLoading && (
                 <div className="flex flex-col items-center justify-center py-20">
@@ -144,137 +275,6 @@ const Menu = () => {
             {/* Menu Content */}
             {!isLoading && !error && menuData && (
                 <>
-                    {/* Daily Tavola Calda Offerings */}
-                    <section className="py-10 px-4 bg-bg">
-                        <div className="container mx-auto">
-                            <div className="bg-white bg-opacity-10 rounded-lg p-6 md:p-8 border-2 border-accent-light shadow-lg relative overflow-hidden">
-                                <div className="absolute top-0 right-0 bg-accent-light text-white px-4 py-2 rounded-bl-lg font-bold">
-                                    Speciale Pranzo
-                                </div>
-                                
-                                <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
-                                    <div className="bg-accent-light rounded-full p-3 mb-4 md:mb-0 md:mr-6 text-white">
-                                        <Utensils size={32} />
-                                    </div>
-                                    <div>
-                                        <h2 className="text-2xl md:text-3xl font-bold text-secondary">
-                                            Tavola Calda - Menu del Giorno
-                                        </h2>
-                                        <p className="text-lg text-gray-700 mt-1">
-                                            Primi, secondi e contorni preparati ogni giorno con ingredienti freschi
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                                    <div className="bg-white rounded-lg p-4 shadow-md">
-                                        <div className="flex items-center mb-3">
-                                            <div className="bg-accent-light w-8 h-8 rounded-full flex items-center justify-center text-white mr-3">
-                                                <span className="font-bold">1</span>
-                                            </div>
-                                            <h3 className="text-xl font-bold text-primary">Primi Piatti</h3>
-                                        </div>
-                                        <p className="text-gray-700">
-                                            Pasta fresca, risotti e zuppe della tradizione napoletana, preparati con cura e ingredienti locali.
-                                        </p>
-                                    </div>
-                                    
-                                    <div className="bg-white rounded-lg p-4 shadow-md">
-                                        <div className="flex items-center mb-3">
-                                            <div className="bg-accent-light w-8 h-8 rounded-full flex items-center justify-center text-white mr-3">
-                                                <span className="font-bold">2</span>
-                                            </div>
-                                            <h3 className="text-xl font-bold text-primary">Secondi Piatti</h3>
-                                        </div>
-                                        <p className="text-gray-700">
-                                            Selezione di carne, pesce e piatti vegetariani, cucinati secondo le ricette della tradizione napoletana.
-                                        </p>
-                                    </div>
-                                    
-                                    <div className="bg-white rounded-lg p-4 shadow-md">
-                                        <div className="flex items-center mb-3">
-                                            <div className="bg-accent-light w-8 h-8 rounded-full flex items-center justify-center text-white mr-3">
-                                                <span className="font-bold">3</span>
-                                            </div>
-                                            <h3 className="text-xl font-bold text-primary">Contorni</h3>
-                                        </div>
-                                        <p className="text-gray-700">
-                                            Verdure di stagione preparate secondo ricette tradizionali, perfette per accompagnare i nostri piatti.
-                                        </p>
-                                    </div>
-                                </div>
-                                
-                                <div className="bg-white rounded-lg p-5 shadow-md border-l-4 border-accent-light">
-                                    <div className="flex items-start">
-                                        <Calendar size={22} className="text-accent-light mt-1 mr-3 flex-shrink-0" />
-                                        <p className="text-gray-700">
-                                            <span className="font-bold text-secondary">Il nostro menu varia ogni giorno</span> in base alla disponibilità di ingredienti freschi e stagionali. Proponiamo sempre opzioni diverse per accontentare tutti i gusti.
-                                        </p>
-                                    </div>
-                                    
-                                    <div className="flex items-start mt-4">
-                                        <Instagram size={22} className="text-accent-light mt-1 mr-3 flex-shrink-0" />
-                                        <p className="text-gray-700">
-                                            <span className="font-bold text-secondary">Seguici su Instagram</span> per scoprire in anteprima il menu del giorno e tutte le nostre specialità:
-                                            <a 
-                                                href="https://www.instagram.com/tavolacalda_paninoteca_8e90/" 
-                                                target="_blank" 
-                                                rel="noopener noreferrer"
-                                                className="ml-2 text-accent-dark hover:underline font-medium"
-                                            >
-                                                @tavolacalda_paninoteca_8e90
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* Custom Offerings */}
-                    <section className="py-10 px-4">
-                        <div className="container mx-auto">
-                            <div className="bg-white rounded-lg p-6 md:p-8 border-l-4 border-primary shadow-md">
-                                <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-4 flex items-center">
-                                    <UtensilsCrossed size={24} className="mr-3 text-primary" />
-                                    Piatti Personalizzati
-                                </h2>
-                                <p className="text-gray-700 text-lg mb-3">
-                                    Non trovi quello che cerchi nel menu? Da 8&90 realizziamo anche preparazioni su richiesta!
-                                </p>
-                                <div className="space-y-3 mt-4">
-                                    <div className="flex items-start">
-                                        <div className="bg-primary rounded-full p-1 mt-1 mr-3">
-                                            <Clock size={16} className="text-white" />
-                                        </div>
-                                        <p className="text-gray-700">Piatti della tradizione napoletana disponibili con preavviso</p>
-                                    </div>
-                                    <div className="flex items-start">
-                                        <div className="bg-primary rounded-full p-1 mt-1 mr-3">
-                                            <Clock size={16} className="text-white" />
-                                        </div>
-                                        <p className="text-gray-700">Preparazioni per eventi speciali, feste e cerimonie</p>
-                                    </div>
-                                    <div className="flex items-start">
-                                        <div className="bg-primary rounded-full p-1 mt-1 mr-3">
-                                            <Clock size={16} className="text-white" />
-                                        </div>
-                                        <p className="text-gray-700">Adattamento di ricette per esigenze alimentari specifiche</p>
-                                    </div>
-                                </div>
-                                <div className="mt-6">
-                                    <a
-                                        href="tel:+3908118020573 "
-                                        className="inline-flex items-center text-primary font-medium hover:text-accent-dark transition-colors"
-                                    >
-                                        Chiama per informazioni
-                                        <ArrowRight size={16} className="ml-2" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
                     {/* Menu Sections */}
                     <section className="py-10 px-4">
                         <div className="container mx-auto">
@@ -317,65 +317,65 @@ const Menu = () => {
                                 </div>
                             ))}
                         </div>
-
-                        <div className="container mx-auto ">
-                            <div className="bg-white rounded-lg p-6 md:p-8 border-l-4 border-primary shadow-md">
-                                <div className="p-8">
-                                    <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-6">
-                                        Informazioni sul Menu
-                                    </h2>
-
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                        <div>
-                                            <h3 className="text-xl font-semibold text-primary mb-3">I Nostri Ingredienti</h3>
-                                            <p className="text-gray-700 mb-4">
-                                                Utilizziamo solo ingredienti freschi e di qualità, molti dei quali provenienti da produttori locali della Campania.
-                                            </p>
-                                        </div>
-
-                                        <div>
-                                            <h3 className="text-xl font-semibold text-primary mb-3">Allergeni e Diete</h3>
-                                            <p className="text-gray-700 mb-4">
-                                                Segnaliamo la presenza di allergeni nei nostri piatti. In caso di allergie o intolleranze, ti preghiamo di informare il nostro staff.
-                                            </p>
-                                            <p className="text-gray-700 mb-4">
-                                                Disponiamo di opzioni vegetariane. Su richiesta, possiamo preparare alcuni piatti in versione senza glutine.
-                                            </p>
-                                            <p className="text-gray-600 italic text-sm">
-                                                * I prezzi potrebbero subire variazioni. Il menu potrebbe essere soggetto a modifiche stagionali.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="container mx-auto px-4 py-10 text-center">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                                Voglia di <span className="text-highlight">8&90</span>?
-                            </h2>
-                            <p className="text-xl max-w-2xl mx-auto mb-8 opacity-90">
-                                Vieni a trovarci o ordina comodamente da casa
-                            </p>
-                            <div className="flex flex-col sm:flex-row justify-center gap-4">
-                                <Link
-                                    to="/contatti"
-                                    className="px-8 py-3 bg-secondary hover:bg-accent-dark text-white font-semibold rounded-md transition duration-300 flex items-center justify-center gap-2"
-                                >
-                                    <span>Trova il Locale</span>
-                                    <ArrowRight size={18} />
-                                </Link>
-                                <a
-                                    href="tel:+3908118020573 "
-                                    className="px-8 py-3 bg-white text-primary hover:bg-gray-100 font-semibold rounded-md transition duration-300"
-                                >
-                                    Ordina Telefonicamente
-                                </a>
-                            </div>
-                        </div>
                     </section>
                 </>
             )}
+
+            <div className="container mx-auto ">
+                <div className="bg-white rounded-lg p-6 md:p-8 border-l-4 border-primary shadow-md">
+                    <div className="p-8">
+                        <h2 className="text-2xl md:text-3xl font-bold text-secondary mb-6">
+                            Informazioni sul Menu
+                        </h2>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 className="text-xl font-semibold text-primary mb-3">I Nostri Ingredienti</h3>
+                                <p className="text-gray-700 mb-4">
+                                    Utilizziamo solo ingredienti freschi e di qualità, molti dei quali provenienti da produttori locali della Campania.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h3 className="text-xl font-semibold text-primary mb-3">Allergeni e Diete</h3>
+                                <p className="text-gray-700 mb-4">
+                                    Segnaliamo la presenza di allergeni nei nostri piatti. In caso di allergie o intolleranze, ti preghiamo di informare il nostro staff.
+                                </p>
+                                <p className="text-gray-700 mb-4">
+                                    Disponiamo di opzioni vegetariane. Su richiesta, possiamo preparare alcuni piatti in versione senza glutine.
+                                </p>
+                                <p className="text-gray-600 italic text-sm">
+                                    * I prezzi potrebbero subire variazioni. Il menu potrebbe essere soggetto a modifiche stagionali.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mx-auto px-4 py-10 text-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                    Voglia di <span className="text-highlight">8&90</span>?
+                </h2>
+                <p className="text-xl max-w-2xl mx-auto mb-8 opacity-90">
+                    Vieni a trovarci o ordina comodamente da casa
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                    <Link
+                        to="/contatti"
+                        className="px-8 py-3 bg-secondary hover:bg-accent-dark text-white font-semibold rounded-md transition duration-300 flex items-center justify-center gap-2"
+                    >
+                        <span>Trova il Locale</span>
+                        <ArrowRight size={18} />
+                    </Link>
+                    <a
+                        href="tel:+3908118020573 "
+                        className="px-8 py-3 bg-white text-primary hover:bg-gray-100 font-semibold rounded-md transition duration-300"
+                    >
+                        Ordina Telefonicamente
+                    </a>
+                </div>
+            </div>
         </div>
     );
 };
