@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://8e90.jaiki.xyz/sitemap.xml
+
+# Specific rules
+Disallow: /admin
