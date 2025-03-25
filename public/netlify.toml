@@ -3,13 +3,6 @@
   publish = "dist"
   command = "npm run build"
 
-# Specific redirects
-[[redirects]]
-  from = "/home"
-  to = "/"
-  status = 301
-  force = true
-
 # Redirects and headers
 [[redirects]]
   from = "/*"
